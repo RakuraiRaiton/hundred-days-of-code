@@ -11,13 +11,27 @@ a {
 }
 
 header {
-    background-color: rgb(82,23,81);
     display: flex; 
     align-items: center;
     justify-content: space-between;
     padding: 15px 60px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+header a {
+    color: rgb(255, 251, 0);
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+    border-radius: 6px;
+}
+
+header a:hover {
+    color: rgb(77,77,77);
+    background-color: rgb(255, 251, 0);
+}
 #page-logo a {
     padding: 10px;
     font-family: "Oleo Script", sans-serif;
@@ -41,12 +55,28 @@ header li {
     border-style: dotted;
 }
 
-nav {
-    border: 1px solid cyan;
-    border-style: dotted;
+ul {
+    list-style: none;
+}
+
+footer {
+    background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+    padding: 36px;
 }
 
 
-ul {
-    list-style: none;
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+ 
+footer li {
+    width: 80px;
+    height: 80px;
+    margin: 0 50px;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
 }
